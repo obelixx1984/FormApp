@@ -1,5 +1,110 @@
-<div>
-  <h1>
-    FormApp
-  </h1>
+<div class="container">
+  <tabset>
+    <tab heading="Kwartał I" id="tab1"></tab>
+    <tab heading="Kwartał II"></tab>
+    <tab heading="Kwartał III"></tab>
+    <tab heading="Kwartał IV"></tab>
+  </tabset>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col mt-2">
+      <div class="form-group">
+        <label for="imie">Imię</label>
+        <input type="text" class="form-control" id="input-id-1" />
+      </div>
+      <div class="form-group">
+        <label for="nazwisko">Nazwisko</label>
+        <input type="text" class="form-control" id="input-id-2" />
+      </div>
+      <div class="form-group">
+        <label for="ulica">Ulica</label>
+        <input type="text" class="form-control" id="input-id-3" />
+      </div>
+    </div>
+    <div class="col mt-2">
+      <div class="form-group">
+        <label for="miasto">Miasto</label>
+        <input type="text" class="form-control" id="input-id-4" />
+      </div>
+      <div class="form-group">
+        <label for="kod-pocztowy">Kod pocztowy</label>
+        <input type="text" class="form-control" id="input-id-5" />
+      </div>
+      <div class="form-group">
+        <label for="kraj">Kraj</label>
+        <input type="text" class="form-control" id="input-id-6" />
+      </div>
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-6">
+          <button id="reset" name="reset" class="btn btn-primary mr-1">
+            Edytuj
+          </button>
+          <button id="Zapisz" name="Zapisz" class="btn btn-success mr-1">
+            Zapisz
+          </button>
+          <button id="anuluj" name="anuluj" class="btn btn-danger">
+            Anuluj
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <tabset [vertical]="true">
+    <tab heading="Dane nieruchomości 1" id="tab1"></tab>
+    <tab heading="Dane nieruchomości 2"></tab>
+    <tab heading="Dane nieruchomości 3"></tab>
+  </tabset>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col mt-2">
+      <div class="form-group">
+        <label for="nr-katastru">Nr Katastru</label>
+        <input type="text" class="form-control" id="input-id-1" />
+      </div>
+      <div class="form-group">
+        <label for="adres">Adres</label>
+        <input type="text" class="form-control" id="input-id-2" />
+      </div>
+      <div class="form-group">
+        <label for="miasto">Miasto</label>
+        <input type="text" class="form-control" id="input-id-3" />
+      </div>
+    </div>
+    <div class="col mt-2">
+      <div class="form-group">
+        <label for="udzial">% Udział</label>
+        <input type="text" class="form-control" id="input-id-4" />
+      </div>
+      <div class="form-group">
+        <label for="kod-pocztowy">Województwo</label>
+        <input type="text" class="form-control" id="input-id-5" />
+      </div>
+      <div class="form-group">
+        <label for="kraj">Kraj</label>
+        <input type="text" class="form-control" id="input-id-6" />
+      </div>
+      <!-- Button -->
+      <div class="form-group">
+        <div class="col-md-6">
+          <button id="reset" name="reset" class="btn btn-primary mr-1">
+            Edytuj
+          </button>
+          <button id="Zapisz" name="Zapisz" class="btn btn-success mr-1">
+            Zapisz
+          </button>
+          <button id="anuluj" name="anuluj" class="btn btn-danger">
+            Anuluj
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

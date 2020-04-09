@@ -2,11 +2,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FormApp.API.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace FormApp.API.Controllers
 {
+    [Authorize]
     [Route("app/[controller]")]
     [ApiController]
     public class ValuesController : ControllerBase
@@ -31,8 +33,9 @@ namespace FormApp.API.Controllers
 
         // GET app/values/5
         /// <summary>
-        /// Pokazuje zapisaną 1 wartość np. 5
+        /// Pokazuje zapisaną jedną wartość np. id=5
         /// </summary>
+        [AllowAnonymous]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetValue(int id)
         {
